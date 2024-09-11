@@ -66,6 +66,7 @@ export default function Loading({ setIsInitialized, setCurrentView }: LoadingPro
           telegramInitData: initData,
           referrerTelegramId,
         }),
+        mode: 'cors'
       });
       if (!response.ok) {
         throw new Error('Failed to fetch or create user');
